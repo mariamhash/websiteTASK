@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mariam Alchater | Personal Blog</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
@@ -12,23 +13,15 @@
       <nav>
         <a href="./index.html">MH</a>
         <ul>
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="./blog.html">Blog</a>
-          </li>
-          <li>
-            <a href="./contact.html">Contact me</a>
-          </li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact me</a></li>
         </ul>
       </nav>
     </header>
 
-    <hr />
-
     <main>
-      <section>
+      <section class="landing">
         <!-- Landing -->
         <div>
           <h1>Mariam Alchater</h1>
@@ -47,82 +40,69 @@
         />
       </section>
 
-      <hr />
-
-      <section>
+      <section class="posts">
         <!-- Latest Posts -->
         <h2>Latest Posts</h2>
         <div>
-          <article>
+          <article class="post-card">
+            <h3>
+              <a href="./blog.html#post1">Lorem ipsum dolor sit amet</a>
+            </h3>
+            <time datetime="2020-01-01">01/01/2020</time>
             <div>
-              <h2>
-                <a href="./blog.html#post1">Lorem ipsum dolor sit amet</a>
-              </h2>
-              <div>
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Placeholder Image"
-                  loading="lazy"
-                />
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                maxime, repellendus id voluptatibus corrupti debitis molestiae
-                obcaecati voluptate architecto deserunt. Labore fugit delectus
-                assumenda, dicta optio quasi necessitatibus nulla? Dolore!
-              </p>
-              <time datetime="2020-01-01">01/01/2020</time>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Placeholder Image"
+                loading="lazy"
+              />
             </div>
-            <br />
-
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maxime, repellendus id voluptatibus corrupti debitis molestiae
+              obcaecati voluptate architecto deserunt. Labore fugit delectus
+              assumenda, dicta optio quasi necessitatibus nulla? Dolore!
+            </p>
+          </article>
+          <article class="post-card">
+            <h3><a href="./blog.html#post2">Quasi maxime, repellendus</a></h3>
+            <time datetime="2022-02-22">22/02/2022</time>
             <div>
-              <h2><a href="./blog.html#post2">Quasi maxime, repellendus</a></h2>
-              <div>
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Placeholder Image"
-                  loading="lazy"
-                />
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                maxime, repellendus id voluptatibus corrupti debitis molestiae
-                obcaecati voluptate architecto deserunt. Labore fugit delectus
-                assumenda, dicta optio quasi necessitatibus nulla? Dolore!
-              </p>
-              <time datetime="2022-02-22">22/02/2022</time>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Placeholder Image"
+                loading="lazy"
+              />
             </div>
-            <br />
-
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maxime, repellendus id voluptatibus corrupti debitis molestiae
+              obcaecati voluptate architecto deserunt. Labore fugit delectus
+              assumenda, dicta optio quasi necessitatibus nulla? Dolore!
+            </p>
+          </article>
+          <article class="post-card">
+            <h3><a href="./blog.html#post3">Labore fugit assumenda</a></h3>
+            <time datetime="2023-04-01">01/04/2023</time>
             <div>
-              <h2>
-                <a href="./blog.html#post3">Labore fugit delectus assumenda</a>
-              </h2>
-              <div>
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Placeholder Image"
-                  loading="lazy"
-                />
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                maxime, repellendus id voluptatibus corrupti debitis molestiae
-                obcaecati voluptate architecto deserunt. Labore fugit delectus
-                assumenda, dicta optio quasi necessitatibus nulla? Dolore!
-              </p>
-              <time datetime="2023-04-01">01/04/2023</time>
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Placeholder Image"
+                loading="lazy"
+              />
             </div>
-            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maxime, repellendus id voluptatibus corrupti debitis molestiae
+              obcaecati voluptate architecto deserunt. Labore fugit delectus
+              assumenda, dicta optio quasi necessitatibus nulla? Dolore!
+            </p>
           </article>
         </div>
       </section>
     </main>
 
-    <hr />
-
     <footer>
-      <div>
+      <div class="social-media">
         <h3>Social Media</h3>
         <ul>
           <li>
@@ -141,8 +121,10 @@
       </div>
 
       <div>
-        <h3>Mariam Alchater</h3>
-        <p>Computer Engineer</p>
+        <h3 class="name">Mariam Alchater</h3>
+        <p class="title">Computer Engineer</p>
+      </div>
+      <div class="quick-links">
         <h3>Quick Links</h3>
         <ul>
           <li>

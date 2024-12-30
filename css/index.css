@@ -1,0 +1,193 @@
+
+
+/* Landing section */
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 3rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.landing div {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.landing h1 {
+  font-size: 2.5rem;
+  color: #291657;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.landing button {
+  background: #184686;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.landing button:hover {
+  background: #0056b3;
+}
+
+.landing img {
+  border-radius: 50%;
+}
+
+/* Latest Posts section */
+.posts {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.posts h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #291657;
+}
+
+.posts div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.post-card img {
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.post-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-card time {
+  font-size: 0.9rem;
+  color: #6d6f9f;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.post-card p {
+  text-align: justify;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .landing {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .landing div {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .landing img {
+    width: 200px;
+    height: 200px;
+  }
+
+  footer {
+    gap: 10rem; /* Adjust gap for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .landing {
+    padding: 1.5rem;
+  }
+
+  .landing h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .landing p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 2rem; /* Space between stacked sections */
+  }
+
+  footer div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing {
+    padding: 1rem;
+  }
+
+  .landing h1 {
+    font-size: 1.5rem;
+  }
+
+  .landing p {
+    font-size: 0.9rem;
+  }
+
+  .landing button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .posts div {
+    grid-template-columns: 1fr; 
+  }
+
+
+}
