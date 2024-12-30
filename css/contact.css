@@ -1,0 +1,173 @@
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  /* Get in Touch Section */
+  .Get-in-touch {
+    background: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .Get-in-touch h1 {
+    font-size: 2rem;
+    color: #184686;
+    margin-bottom: 1rem;
+  }
+  
+  .Get-in-touch p {
+    font-size: 1.1rem;
+    color: #6d6f9f;
+    margin-bottom: 0;
+  }
+  
+  /* Contact Me Form Section */
+  .contact-me {
+    margin-bottom: 2rem;
+  }
+  .form-div {
+    background: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+
+  
+  .contact-me h2 {
+    font-size: 2rem;
+    color: #184686;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .f-name,
+  .emial,
+  .message {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #184686;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #184686;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0c54a1;
+  }
+  
+  /* Contact Information Section */
+  .info {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .info h2 {
+    font-size: 2rem;
+    color: #184686;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table th,
+  table td {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #6d6f9f;
+  }
+  
+  table th {
+    background-color: #184686;
+    color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .form {
+      width: 90%;
+    }
+  
+    .f-name,
+    .emial,
+    .message {
+      width: 100%;
+    }
+  
+    input[type="submit"] {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Get-in-touch h1 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-me h2,
+    .info h2 {
+      font-size: 1.5rem;
+    }
+  
+    input[type="submit"] {
+      font-size: 0.9rem;
+    }
+  }
+  
