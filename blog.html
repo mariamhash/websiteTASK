@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mariam Alchater | Personal Blog</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
   </head>
 
   <body>
@@ -25,12 +26,10 @@
       </nav>
     </header>
 
-    <hr />
-
-    <main>
+    <main class="post-page">
       <!-- Blog List Section -->
-      <section id="blog-list">
-        <h1>Blog</h1>
+      <section class="blog-list">
+        <h1>Blog List</h1>
         <ul>
           <li><a href="#post1">Lorem ipsum dolor sit amet</a></li>
           <li><a href="#post2">Quasi maxime repellendus id voluptatibus</a></li>
@@ -38,12 +37,10 @@
         </ul>
       </section>
 
-      <hr />
-
       <!-- Blog Post Details Section -->
-      <section id="blog-posts">
+      <section class="blog-posts">
         <!-- Blog Post 1 -->
-        <article id="post1">
+        <article class="post1">
           <h1>Lorem ipsum dolor sit amet</h1>
           <address>By Mariam Alchater</address>
           <time datetime="2020-01-01">01/01/2020</time>
@@ -51,11 +48,13 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
             doloremque sunt labore doloribus, voluptas veniam rerum molestias.
           </p>
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Sample blog post image"
-            loading="lazy"
-          />
+          <div>
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Sample blog post image"
+              loading="lazy"
+            />
+          </div>
           <p>Key points of this post:</p>
           <ul>
             <li>Introduction to the topic</li>
@@ -68,10 +67,8 @@
           </p>
         </article>
 
-        <hr />
-
         <!-- Blog Post 2 -->
-        <article id="post2">
+        <article class="post2">
           <h1>Quasi maxime repellendus id voluptatibus</h1>
           <address>By Mariam Alchater</address>
           <time datetime="2022-02-22">22/02/2022</time>
@@ -79,11 +76,13 @@
             Quasi maxime repellendus id voluptatibus corrupti debitis molestiae
             obcaecati voluptate architecto deserunt.
           </p>
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Sample blog post image"
-            loading="lazy"
-          />
+          <div>
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Sample blog post image"
+              loading="lazy"
+            />
+          </div>
           <p>Here are some highlights:</p>
           <ol>
             <li>Step-by-step process</li>
@@ -96,10 +95,8 @@
           </p>
         </article>
 
-        <hr />
-
         <!-- Blog Post 3 -->
-        <article id="post3">
+        <article class="post3">
           <h1>Labore fugit delectus assumenda</h1>
           <address>By Mariam Alchater</address>
           <time datetime="2023-04-01">01/04/2023</time>
@@ -107,11 +104,13 @@
             Labore fugit delectus assumenda, dicta optio quasi necessitatibus
             nulla? Dolore ipsum.
           </p>
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Sample blog post image"
-            loading="lazy"
-          />
+          <div>
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Sample blog post image"
+              loading="lazy"
+            />
+          </div>
           <p>Takeaways from this post:</p>
           <ul>
             <li>Overview of the process</li>
@@ -124,14 +123,10 @@
           </p>
         </article>
       </section>
-
-      <hr />
     </main>
 
-    <hr />
-
     <footer>
-      <div>
+      <div class="social-media">
         <h3>Social Media</h3>
         <ul>
           <li>
@@ -150,8 +145,10 @@
       </div>
 
       <div>
-        <h3>Mariam Alchater</h3>
-        <p>Computer Engineer</p>
+        <h3 class="name">Mariam Alchater</h3>
+        <p class="title">Computer Engineer</p>
+      </div>
+      <div class="quick-links">
         <h3>Quick Links</h3>
         <ul>
           <li>
