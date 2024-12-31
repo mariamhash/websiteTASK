@@ -12,6 +12,8 @@ main {
     margin-bottom: 2rem;
     border-radius: 8px;
     text-align: center;
+    background: linear-gradient(135deg, #ffffff85 0%, #b5cfe591 100%);
+
   }
   
   .Get-in-touch h1 {
@@ -103,6 +105,7 @@ main {
     background: #f8f9fa;
     padding: 2rem;
     border-radius: 8px;
+  
   }
   
   .info h2 {
